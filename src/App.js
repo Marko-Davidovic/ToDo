@@ -16,7 +16,6 @@ import {
 import { Delete } from '@mui/icons-material';
 import './App.css';
 
-
 function TodoApp() {
   // Load tasks from localStorage or initialize an empty array
   const storedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
@@ -72,8 +71,9 @@ function TodoApp() {
   };
 
   return (
-    <Container maxWidth="sm">
-      <Paper elevation={3} style={{ padding: '16px' }}>
+    <Container maxWidth="sm" style={{backgroundColor: ";lightblue"}}>
+      <Paper elevation={3} 
+            style={{ padding: '16px', marginTop: "60px"}}>
         <Typography variant="h5" gutterBottom>
           Todo List
         </Typography>
